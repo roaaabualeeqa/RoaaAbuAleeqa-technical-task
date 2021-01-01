@@ -1,0 +1,59 @@
+.app_title 
+{
+    text-align: center;
+    background-color: #f56601;
+    padding: 13px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.sections_title 
+{
+    font-weight: bold;
+    padding-left: 11px;
+}
+
+#order 
+{
+    margin-left: 8px;
+}
+
+#quantity 
+{
+    margin-left: 8px;
+}
+
+.form_div 
+{
+    margin-left: 15px;
+    margin-top: 25px;
+}
+
+.quantity_div 
+{
+    margin-top: 35px;
+}
+
+.submit_btn 
+{
+    float: right;
+    background-color: #f56601 !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    width: 200px;
+    margin-top: 16px;
+    margin-right: -8px;
+}
+
+#orders_summary 
+{
+    margin-left: 23px;
+    margin-top: 80px;
+}
+
+#error_msg 
+{
+    margin-left: 12px;
+    color: red;
+    font-size: 14px;
+}

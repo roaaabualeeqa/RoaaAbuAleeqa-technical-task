@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant App</title>
+
+	<!-- including the css files -->
+	<link rel="stylesheet" href="./restaurant.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+	<!-- End css files -->
+	<h1 class="app_title">Restaurant App</h1>
+</head>
+<body>
+    <div class="form_div col-md-6 col-sm-12">
+    	<!-- new order form -->
+	    <form class="restaurant_order">
+	    	
+	    	<!-- order options -->
+			<div class="order_div">
+				<p class="sections_title">What You Like To Order?</p>
+				<select name="order" class="custom-select" id="order">
+				  <option value="burger">Burger</option>
+				  <option value="pizza">Pizza</option>
+				  <option value="shawerma">Shawerma</option>
+				  <option value="rice">Rice</option>
+				  <option value="cake">Cake</option>
+				  <option value="cheese">Cheese</option>
+				  <option value="steak_meat">Steak Meat</option>
+				  <option value="zinger">Zinger</option>
+				  <option value="fish">Fish</option>
+				  <option value="pepsi">Pepsi</option>
+				  <option value="mineral_water">Mineral Water</option>
+				</select>
+			</div>
+			
+
+			<!-- Quantity -->
+			<div class="quantity_div">
+				<p class="sections_title">Quantity</p>
+				<input type="number" name="quantity" min="1" class="form-control" id="quantity" onkeyup="validate_quantity_input()" placeholder="how many you need to order" required>
+				<p id="error_msg"></p>
+			</div>
+
+			<!-- Submit Button -->
+			<button class="btn submit_btn" type="button" onclick="get_selected_order()">SUBMIT</button>
+
+	    </form>
+    </div>
+
+    <div id="orders_summary" class="col-md-6 col-sm-12">
+    	
+    </div>
+	
+    
+
+<!-- Including Script	 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script type="text/javascript" src="./restaurant.js"></script>
+
+</body>
+</html>
